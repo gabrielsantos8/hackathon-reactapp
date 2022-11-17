@@ -4,12 +4,12 @@ export const Menu = () => {
 
     return (
         <>
-            <nav class="navbar navbar-light shadow">
-                <div class="container-fluid">
-                    <span class="navbar-brand mb-0 h1" />FindTeacher
+            <nav className="navbar navbar-light shadow">
+                <div className="container-fluid">
+                    <span className="navbar-brand mb-0 h1" />FindTeacher
 
-                <button class="navbar-toggler" type="button">
-                    <span class="navbar-toggler-icon" />
+                <button className="navbar-toggler" type="button">
+                    <span className="navbar-toggler-icon" />
                 </button>
                 </div>
             </nav>
