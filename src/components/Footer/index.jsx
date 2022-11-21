@@ -4,16 +4,9 @@ export const Footer = () => {
 
     return (
         <>
-            <footer className="py-3 my-4">
-                <ul className="nav justify-content-center border-bottom pb-3 mb-3">
-                    <li className="nav-item"><a href="#" className="nav-link px-2 text-light">Home</a></li>
-                    <li className="nav-item"><a href="#" className="nav-link px-2 text-light">Features</a></li>
-                    <li className="nav-item"><a href="#" className="nav-link px-2 text-light">Pricing</a></li>
-                    <li className="nav-item"><a href="#" className="nav-link px-2 text-light">FAQs</a></li>
-                    <li className="nav-item"><a href="#" className="nav-link px-2 text-light">About</a></li>
-                </ul>
-                <p className="text-center text-light">© 2022 Company, Inc</p>
-            </footer>
+            <footer className="py-5 bg-black">
+            <div className="container px-5"><p class="m-0 text-center text-white small">Copyright © Your Website 2022</p></div>
+        </footer>
 
 
         </>
