@@ -1,4 +1,8 @@
 import './style.css'
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 export const Menu = () => {
 
@@ -12,9 +16,9 @@ export const Menu = () => {
                               
                 <div className="collapse navbar-collapse" id="navbarResponsive">
                     <ul className="navbar-nav ms-auto">
-                        <li className="nav-item"><a className="nav-link text-white" href="#!">Home</a></li>
-                        <li className="nav-item"><a className="nav-link text-white" href="#!">Cadastro</a></li>
-                        <li className="nav-item"><a className="nav-link text-white" href="#!">Sobre</a></li>
+                        <li className="nav-item"><a className="nav-link text-white" href="/">Home</a></li>
+                        <li className="nav-item"><a className="nav-link text-white" href="/cadastro">Cadastro</a></li>
+                        <li className="nav-item"><a className="nav-link text-white" href="#sobre">Sobre</a></li>
                     </ul>
                 </div>
             </div>
