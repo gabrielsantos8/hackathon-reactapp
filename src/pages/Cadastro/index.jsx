@@ -2,6 +2,7 @@ import './style.css'
 import axios from 'axios'
 import { useEffect, useRef, useState } from 'react'
 import { Menu } from '../../components/Menu';
+import { Footer } from '../../components/Footer';
 import { FaTrashAlt, FaPen } from "react-icons/fa";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css'
@@ -52,6 +53,7 @@ export const Cadastro = () => {
 
 
     function submitFormUpdt(e) {
+        
         e.preventDefault();
         if (refFormUpdt.current.checkValidity()) {
             let obj = new Object;
@@ -123,6 +125,8 @@ export const Cadastro = () => {
     const limpaForm = () => {
         const inputs = document.querySelectorAll('input');
         const textareas = document.querySelectorAll('textarea');
+        const fileInput = document.getElementById('prof_img')
+        fileInput.value = "";
         inputs.forEach(el => {
             el.value = ""
         })
@@ -134,7 +138,7 @@ export const Cadastro = () => {
     return (
         <>
             <Menu></Menu>
-            <div className='container bg-light p-5 card-cad'>
+            <div className='container bg-light mt-5 p-5 card-cad'>
                 <h2 className='heading-section'>Cadastro:</h2>
                 <form
                     noValidate
@@ -213,7 +217,7 @@ export const Cadastro = () => {
                                                     <td>{obj.experiencia} anos</td>
                                                     <td>R$ {obj.salarioalvo}</td>
                                                     <td>
-                                                        <a style={{ color: "#fff" }} onClick={(e) => {setDataUpdt(obj);handleShow()}} className="btn btn-primary m-2"><FaPen /></a>
+                                                        <a style={{ color: "#fff" }} onClick={(e) => {limpaForm();setDataUpdt(obj);handleShow()}} className="btn btn-primary m-2"><FaPen /></a>
                                                         <a style={{ color: "#fff" }} onClick={(e) => { deletar(obj.id) }} className="btn btn-danger"><FaTrashAlt /></a>
                                                     </td>
                                                 </tr>
@@ -284,7 +288,7 @@ export const Cadastro = () => {
                     </Button>
                 </Modal.Footer>
             </Modal>
-
+            <Footer></Footer>
         </>
     )
 }
