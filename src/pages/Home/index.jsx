@@ -27,8 +27,8 @@ export const Home = () => {
                         </div>
                         <div class="col-lg-6 order-lg-1">
                             <div class="p-5">
-                                <h2 class="display-4">For those about to rock...</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+                                <h2 class="display-4">Sobre o sistema</h2>
+                                <p>É um app que possibilita professores não cursados consigam contratos em universidades mostrando sua experiência, o salário que buscam encontrar, claro, sempre disponibilizando o contato para negociações.</p>
                             </div>
                         </div>
                     </div>
@@ -44,8 +44,8 @@ export const Home = () => {
                         </div>
                         <div class="col-lg-6">
                             <div class="p-5">
-                                <h2 class="display-4">We salute you!</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+                                <h2 class="display-4">Os desenvolvedores</h2>
+                                <p>Os desenvolvedores Gabriel e Lucas juntaram suas forças para criar o moderno, fácil e rápido sistema de cadastros de professores, com o objetivo de ajudar aqueles que não possuem curso, que possam ter visualização para as instituições de ensino de todo o país.</p>
                             </div>
                         </div>
                     </div>
