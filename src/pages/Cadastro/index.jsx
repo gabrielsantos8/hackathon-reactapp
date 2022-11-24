@@ -43,7 +43,9 @@ export const Cadastro = () => {
             formData.append("sobre", obj.sobre);
             formData.append("experiencia", obj.experiencia);
             formData.append("salarioalvo", obj.salario);
-            formData.append("prof_img", e.target[5].files[0])
+            if(obj.prof_img) {
+                formData.append("prof_img", e.target[5].files[0])
+            }
 
             inserir(formData);
         } else {
@@ -53,7 +55,6 @@ export const Cadastro = () => {
 
 
     function submitFormUpdt(e) {
-        
         e.preventDefault();
         if (refFormUpdt.current.checkValidity()) {
             let obj = new Object;
@@ -70,7 +71,12 @@ export const Cadastro = () => {
             formData.append("sobre", obj.sobre);
             formData.append("experiencia", obj.experiencia);
             formData.append("salarioalvo", obj.salario);
-            formData.append("prof_img", e.target[5].files[0])
+            if (obj.prof_img) {
+                formData.append("prof_img", e.target[5].files[0])
+            } else {
+                formData.append("prof_img", dataUpdt.prof_img)
+                formData.append("sm", 1)
+            }
 
             atualizar(formData, obj.id);
         } else {
@@ -125,8 +131,6 @@ export const Cadastro = () => {
     const limpaForm = () => {
         const inputs = document.querySelectorAll('input');
         const textareas = document.querySelectorAll('textarea');
-        const fileInput = document.getElementById('prof_img')
-        fileInput.value = "";
         inputs.forEach(el => {
             el.value = ""
         })
@@ -174,7 +178,7 @@ export const Cadastro = () => {
                     </div>
 
                     <div className="col-md-12">
-                        <input type="file" name="prof_img" id='prof_img' className='form-control' />
+                        <input type="file" name="prof_img" id='prof_img' className='form-control' required />
                     </div>
 
                     <div className="col-md-12">
@@ -217,7 +221,11 @@ export const Cadastro = () => {
                                                     <td>{obj.experiencia} anos</td>
                                                     <td>R$ {obj.salarioalvo}</td>
                                                     <td>
-                                                        <a style={{ color: "#fff" }} onClick={(e) => {limpaForm();setDataUpdt(obj);handleShow()}} className="btn btn-primary m-2"><FaPen /></a>
+                                                        <a style={{ color: "#fff" }} onClick={(e) => {
+                                                            limpaForm();
+                                                            setDataUpdt(obj);
+                                                            handleShow()
+                                                        }} className="btn btn-primary m-2"><FaPen /></a>
                                                         <a style={{ color: "#fff" }} onClick={(e) => { deletar(obj.id) }} className="btn btn-danger"><FaTrashAlt /></a>
                                                     </td>
                                                 </tr>
