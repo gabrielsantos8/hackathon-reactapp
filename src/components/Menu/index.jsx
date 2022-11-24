@@ -18,7 +18,6 @@ export const Menu = () => {
                     <ul className="navbar-nav ms-auto">
                         <li className="nav-item"><a className="nav-link text-white" href="/">Home</a></li>
                         <li className="nav-item"><a className="nav-link text-white" href="/cadastro">Cadastro</a></li>
-                        <li className="nav-item"><a className="nav-link text-white" href="#sobre">Sobre</a></li>
                     </ul>
                 </div>
             </div>

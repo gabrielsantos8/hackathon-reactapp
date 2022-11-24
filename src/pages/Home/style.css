@@ -3,7 +3,7 @@ header.masthead {
     overflow: hidden;
     padding-top: calc(7rem + 72px);
     padding-bottom: 7rem;
-    background: linear-gradient(0deg, #b080f9 0%, #6807f9 100%);
+    background: linear-gradient(0deg, #b080f9 1%, #6807f9 40%);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: scroll;
@@ -20,7 +20,8 @@ header.masthead {
     font-size: 2rem;
   }
 
-.btn{
+.btn-header{
+    margin: 2px;
     background: #6807f9 !important;
     color: #fff !important;
     border-color: #6807f9 !important;
