@@ -10,14 +10,14 @@ export const Home = () => {
         <>
             <Menu></Menu>
 
-            <header class="masthead text-center text-white">
-                <div class="masthead-content">
-                    <div class="container">
-                        <h1 class="masthead-heading mb-0">Moderno, fácil e rápido</h1>
-                        <h2 class="masthead-subheading mb-5">Cadastre seu professor favorito.</h2>
-                        <a class="btn btn-header col-md-3 col-12 rounded-pill mt-2" href="#sobre">Sobre</a>
-                        <a class="btn btn-header col-md-3 col-12 rounded-pill mt-2" href="#devs">Desenvolvedores</a>
-                        <a class="btn btn-header col-md-3 col-12 rounded-pill mt-2" href="#contatos">Contato</a>
+            <header className="masthead text-center text-white">
+                <div className="masthead-content">
+                    <div className="container">
+                        <h1 className="masthead-heading mb-0">Moderno, fácil e rápido</h1>
+                        <h2 className="masthead-subheading mb-5">Cadastre seu professor favorito.</h2>
+                        <a className="btn btn-header col-md-3 col-12 rounded-pill mt-2" href="#sobre">Sobre</a>
+                        <a className="btn btn-header col-md-3 col-12 rounded-pill mt-2" href="#devs">Desenvolvedores</a>
+                        <a className="btn btn-header col-md-3 col-12 rounded-pill mt-2" href="#contatos">Contato</a>
                     </div>
                 </div>
             </header>
