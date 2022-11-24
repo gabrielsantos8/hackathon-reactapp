@@ -39,8 +39,20 @@ server.use(middlewares);
 server.use(upload.any());
 
 server.use((req, res, next) => {
-    req.body = { ...req.body, prof_img: imagem }
-    next();
+    if(req.method == 'PUT') {
+        req.body = {
+            nome: req.body.nome,
+            sobre: req.body.sobre,
+            experiencia: req.body.experiencia,
+            salarioalvo: req.body.salarioalvo,
+            prof_img: req.body.sm ? req.body.prof_img : imagem
+        }
+    } else {
+        req.body = {
+            ...req.body, prof_img: imagem
+        }
+    }
+     next();
 })
 
 server.use(router)
