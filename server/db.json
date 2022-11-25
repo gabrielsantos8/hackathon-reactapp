@@ -1,3 +1,36 @@
 {
-  "professores": []
+  "professores": [
+    {
+      "nome": "Marcos Dias Vendramini",
+      "sobre": "Experiência no ramo de Análise e Desenvolvimento de Sistemas.\r\nDesenvolvimento Windows: Delphi e C#.\r\nDesenvolvimento Mobile: Flutter (Android e iOS), Java (Android), Swift e Objectve-C (iOS) e C# (Windows Phone/Windows Universal).\r\nDesenvolvimento Web: C# e Asp.Net.\r\nBanco de Dados: Oracle, Sql Server, SQLite, Firebird.\r\n\r\nExperiência em Docência em Ensino Superior na área de informática.\r\nUniALFA Umuarama: Disciplinas de Algoritmos, Estrutura de Dados, Programação para Dispositivos Móveis (Android) e Programação Avançada para Dispositivos Móveis (iOS).\r\nUNIPAR (Universidade Paranaense): Interface Usuário-Máquina e Programação para Internet (JSP).",
+      "experiencia": "15",
+      "salarioalvo": "15000",
+      "prof_img": "1669342060130.jpg",
+      "id": 1
+    },
+    {
+      "nome": "Mateus Rocha (Chinês)",
+      "sobre": "Formado em sistemas para internet na Faculdade Alfa e na Pós graduação Web e mobile em 2019. Autodidata, apaixonado por tecnologia, adoro novos desafios, pois me motiva.",
+      "experiencia": "10",
+      "salarioalvo": "10000",
+      "prof_img": "1669342171366.jpg",
+      "id": 2
+    },
+    {
+      "nome": "Jose Andre Dorigan",
+      "sobre": "Possuo Graduação e Mestrado em Ciência da Computação pela Universidade Estadual de Londrina (UEL) e atualmente doutorando em Informática pela Universidade Federal do Paraná (UFPR) com pesquisa nas áreas de Machine Learning e Redes Neurais. ",
+      "experiencia": "13",
+      "salarioalvo": "14000",
+      "prof_img": "1669342257741.jpg",
+      "id": 3
+    },
+    {
+      "nome": "Alex Pereira",
+      "sobre": "I have a degree in internet systems and a postgraduate degree in web development and mobile devices.\r\n\r\nI am a professor at UniAlfa University - Umuarama Paraná.\r\n\r\nI really like to address issues of productivity, task organization (everything related to software development).\r\n\r\nMy experiences as a systems developer are:\r\n\r\n1. I worked for a while on a B2B ecommerce development. Acquire expertise in online sales flow, business rules, agile methodology, tax calculations.\r\n2. Participated in the development of a system that registers products for e-commerce. The project aims to register the data of new products in the company's system (profile, department, commercial description, photos, characteristics, etc.)\r\n3. I like to create new project architectures, using SOLID, TDD, BDD, Clean Architecture, Clean Code (backend and frontend architecture creation)\r\n4. I like to create solutions to problems, designing implementation processes with technologies.",
+      "experiencia": "10",
+      "salarioalvo": "250000",
+      "prof_img": "1669342358247.jpg",
+      "id": 4
+    }
+  ]
 }
