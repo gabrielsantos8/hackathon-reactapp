@@ -2,3 +2,15 @@ nav{
     background-color: #6807f9;
     color: #fff;
 }
+
+.navitem {
+    color: #fff !important;
+    font-size: 1.5em;
+    text-shadow: 1px 0px 0 cyan, 2px 2px 0 magenta;
+}
+
+.navitem:hover {
+    color: #fff !important;
+    font-size: 1.1em;
+    text-shadow: -1px 0px 0 cyan, 3px 2px 0 magenta;
+}
